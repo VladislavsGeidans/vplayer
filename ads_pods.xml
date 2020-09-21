@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast3_draft.xsd">
+    <Ad id="preroll-1" sequence="2">
+        <InLine>
+            <AdSystem version="2.0">Alex_Vast</AdSystem>
+            <AdTitle/>
+            <Description/>
+            <Survey/>
+            <Error><![CDATA[http://qa.jwplayer.com/~alex/pixel.gif?err=error]]></Error>
+            <Impression id="DART">http://ads.moceanads.com/8/img/12a9c6b0-e268-11e4-8e37-bc305bf4914b</Impression>
+            <Creatives>
+                <Creative sequence="2" AdID="">
+                    <Linear skipoffset="00:00:03">
+                        <Duration>00:00:10</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start"></Tracking>
+                            <Tracking event="firstQuartile"></Tracking> 
+                            <Tracking event="midpoint"></Tracking>
+                            <Tracking event="thirdQuartile"></Tracking>
+                            <Tracking event="complete"></Tracking>
+                            <Tracking event="pause"></Tracking>
+                            <Tracking event="mute"></Tracking>
+                            <Tracking event="fullscreen"></Tracking>
+                        </TrackingEvents>
+                        <AdParameters/>
+                        <VideoClicks>
+                            <ClickThrough><![CDATA[http://www.jwplayer.com/]]></ClickThrough>
+                            <ClickTracking id="Alex">http://ads.moceanads.com/8/click/12a9c6b0-e268-11e4-8e37-bc305bf4914b/687738</ClickTracking>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="0" width="640" height="360"><![CDATA[http://content.jwplatform.com/videos/5jzLPZMW-kNspJqnJ.mp4]]></MediaFile>
+                            <MediaFile id="2" delivery="progressive" type="video/webm" bitrate="0" width="640" height="360"><![CDATA[http://content.bitsontherun.com/videos/1EI2jHpo-27m5HpIu.webm]]></MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="DART">
+                    <AdServingData>
+                        <DeliveryData>
+                            <GeoData><![CDATA[ct=US&st=NY&ac=212&zp=10021&bw=3&dma=3&city=13275]]></GeoData>
+                        </DeliveryData>
+                    </AdServingData>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+    <Ad id="preroll-1" sequence="1">
+        <InLine>
+            <AdSystem version="2.0">Alex_Vast</AdSystem>
+            <AdTitle/>
+            <Description/>
+            <Survey/>
+            <Error><![CDATA[http://qa.jwplayer.com/~alex/pixel.gif?err=ssss]]></Error>
+            <Impression id="DART"><![CDATA[http://qa.jwplayer.com/~alex/pixel.gif?2]]></Impression>
+            <Creatives>
+                <Creative sequence="1" AdID="">
+                    <Linear skipoffset="00:00:05">
+                        <Duration>00:00:30</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start"></Tracking>
+                            <!-- Invalid, use 'Impression' element: <Tracking event="impression">http://qa.jwplayer.com/~alex/pixel.gif?2</Tracking> -->
+                            <Tracking event="firstQuartile"></Tracking>
+                            <Tracking event="midpoint"></Tracking>
+                            <Tracking event="thirdQuartile"></Tracking>
+                            <Tracking event="complete"></Tracking>
+                            <Tracking event="pause"></Tracking>
+                            <Tracking event="mute"></Tracking>
+                            <Tracking event="fullscreen" offset="00:00:30"></Tracking>
+                        </TrackingEvents>
+                        <AdParameters/>
+                        <VideoClicks>
+                            <ClickThrough><![CDATA[http://www.jwplayer.com/]]></ClickThrough>
+                            <ClickTracking id="Alex"><![CDATA[http://qa.jwplayer.com/~alex/pixel.gif?10]]></ClickTracking>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="0" width="640" height="360"><![CDATA[http://content.jwplatform.com/videos/Wf8BfcSt-kNspJqnJ.mp4]]></MediaFile>
+                            <MediaFile id="2" delivery="progressive" type="video/webm" bitrate="0" width="640" height="360"><![CDATA[http://content.bitsontherun.com/videos/tafrxQYx-27m5HpIu.webm]]></MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="DART">
+                    <AdServingData>
+                        <DeliveryData>
+                            <GeoData><![CDATA[ct=US&st=NY&ac=212&zp=10021&bw=3&dma=3&city=13275]]></GeoData>
+                        </DeliveryData>
+                    </AdServingData>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>

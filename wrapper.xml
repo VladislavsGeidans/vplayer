@@ -1,0 +1,50 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http:/vast3.xsd" version="3.0">
+    <Ad id="56" sequence="1">
+        <Wrapper followAdditonalWrappers="true" allowMultipleAds="true" fallbackOnNoAd="true">
+            <AdSystem>SkyAdVideo</AdSystem>
+            <Error>
+                <![CDATA[ /no-impression.gif ]]>
+            </Error>
+            <Impression>
+                <![CDATA[ /no-impression.gif ]]>
+            </Impression>
+            <VASTAdTagURI>
+                <![CDATA[
+/wrapper_creative2.xml?key=ee3edeff5a81998072289f2e6d434a53&cp.adsource=ydx_sky&cp.adtype=pre&
+]]>
+            </VASTAdTagURI>
+        </Wrapper>
+    </Ad>
+    <Ad id="101" sequence="2">
+        <Wrapper followAdditonalWrappers="true" allowMultipleAds="true" fallbackOnNoAd="true">
+            <AdSystem>SkyAdVideo</AdSystem>
+            <Error>
+                <![CDATA[ /no-impression.gif ]]>
+            </Error>
+            <Impression>
+                <![CDATA[ /no-impression.gif ]]>
+            </Impression>
+            <VASTAdTagURI>
+                <![CDATA[
+/wrapper_creative2.xml?key=ee3edeff5a81998072289f2e6d434a53&cp.adsource=inv&cp.adtype=pre&
+]]>
+            </VASTAdTagURI>
+        </Wrapper>
+    </Ad>
+    <Ad id="75" sequence="3">
+        <Wrapper followAdditonalWrappers="true" allowMultipleAds="true" fallbackOnNoAd="true">
+            <AdSystem>SkyAdVideo</AdSystem>
+            <Error>
+                <![CDATA[ /no-impression.gif ]]>
+            </Error>
+            <Impression>
+                <![CDATA[ /no-impression.gif ]]>
+            </Impression>
+            <VASTAdTagURI>
+                <![CDATA[
+/wrapper_creative2.xml?key=ee3edeff5a81998072289f2e6d434a53&cp.adsource=btwd&cp.adtype=pre&
+]]>
+            </VASTAdTagURI>
+        </Wrapper>
+    </Ad>
+</VAST>

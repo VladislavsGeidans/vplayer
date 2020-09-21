@@ -1,0 +1,55 @@
+<VAST xmlns:MM="http://www.example.com" version="2.0">
+	<Ad id="10724976" sequence="2">
+		<InLine>
+			<AdSystem>
+				<![CDATA[ Test ]]>
+			</AdSystem>
+			<AdTitle>
+				<![CDATA[ html5_new_ad ]]>
+			</AdTitle>
+			<Description>
+				<![CDATA[ html5_new_ad ]]>
+			</Description>
+			<Creatives>
+				<Creative id="23227072" AdID="23227072" sequence="1">
+					<Linear>
+						<Duration>00:00:15</Duration>
+						<AdParameters>
+							<![CDATA[
+{"videos" : [{"mimetype": "video/mp4", "url" : "https://vjs.zencdn.net/v/oceans.mp4"}]}
+]]>
+						</AdParameters>
+						<TrackingEvents>
+							<Tracking event="start">http://www.example.com/start</Tracking>
+							<Tracking event="firstQuartile">http://www.example.com/firstQuartile</Tracking>
+							<Tracking event="midpoint">http://www.example.com/midpoint</Tracking>
+							<Tracking event="thirdQuartile">http://www.example.com/thirdQuartile</Tracking>
+							<Tracking event="complete">http://www.example.com/complete</Tracking>
+							<Tracking event="mute">http://www.example.com/mute</Tracking>
+							<Tracking event="unmute">http://www.example.com/unmute</Tracking>
+							<Tracking event="rewind">http://www.example.com/rewind</Tracking>
+							<Tracking event="pause">http://www.example.com/pause</Tracking>
+							<Tracking event="resume">http://www.example.com/resume</Tracking>
+							<Tracking event="fullscreen">http://www.example.com/fullscreen</Tracking>
+							<Tracking event="creativeView">http://www.example.com/creativeView</Tracking>
+							<Tracking event="acceptInvitation">http://www.example.com/acceptInvitation</Tracking>
+							<Tracking event="progress" offset="10%"><![CDATA[http://www.example.com/event-progress_1]]></Tracking>
+                            <Tracking event="progress" offset="00:00:05.000"><![CDATA[http://www.example.com/event-progress_2]]></Tracking>
+                            <Tracking event="progress" offset="00:00:10.000"><![CDATA[http://www.example.com/event-progress_3]]></Tracking>
+						</TrackingEvents>
+						<MediaFiles>
+							<MediaFile id="3022295" height="480" width="640" bitrate="" type="application/javascript" delivery="progressive" maintainAspectRatio="true" scalable="true" apiFramework="VPAID">
+								<![CDATA[
+https://s3-us-west-2.amazonaws.com/dvtests/VpaidVideoAd_v2.js
+]]>
+							</MediaFile>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+				<Creative id="23227072" AdID="23227072" sequence="1">
+					<CompanionAds/>
+				</Creative>
+			</Creatives>
+		</InLine>
+	</Ad>
+</VAST>

@@ -1,0 +1,52 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="/vast3.xsd">
+    <Ad id="13">
+        <Wrapper>
+            <AdSystem>SkyAdVideo</AdSystem>
+            <VASTAdTagURI>
+                <![CDATA[ //ads.adfox.ru/249958/getCode?pp=g&ps=cmox&p2=fpoa ]]>
+            </VASTAdTagURI>
+            <Error>
+                <![CDATA[ /no-impression.gif ]]>
+            </Error>
+            <Impression>
+                <![CDATA[ /no-impression.gif ]]>
+            </Impression>
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <Duration>00:00:15</Duration>
+                        <TrackingEvents>
+                            <Tracking event="skip">
+                                <![CDATA[
+/track.php?v=ee3edeff5a81998072289f2e6d434a53&d=kpGTtNZCDoBF135Dz7JFRRg4Tpu1nrHQDw1fA7QWD31V64ZeeR7QxcgpEwBFt7qWC7MAEdGAdcvf1ua9Dg3TaN5ZCSmtdRgPeW4Mx4zEER7aECqaTPuQEcZEteFhX3WfpeFhrcWBPJfH1phqprFhPPGFTPUTECO1PpufxdwaKJ
+]]>
+                            </Tracking>
+                            <Tracking event="firstQuartile">
+                                <![CDATA[
+/track.php?v=ee3edeff5a81998072289f2e6d434a53&d=KpgtTnzCdoBf135Dz7jfRrG4tPu1Nrhqdw1fA7qwd31V64zEeR7qxCgpEWbfT7QWc7maEdGap3Jmeu5jZ7nMXNzEerFae7zVcs1aEDgATggQTdo1tv1qazWvPj5TAzWjTJntXZw3twgFezwfTR5QtdqAtB3ttdzS8EG84
+]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[
+/track.php?v=ee3edeff5a81998072289f2e6d434a53&d=KpGTtnzCDobf135DZ7jfRRg4tPu1NRhqdW1fa7qWD31v64zeeR7QxCGpEWbfT7QWC7mAedGAPcmf4UQPpv4txRGPEW4mX4zEer7aecqaTPUqecZeTeFHx3wFPefhRcwBPJfh1PhqpRFhppGFtpUtEco1ppUfXDWaKj
+]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[
+/track.php?v=ee3edeff5a81998072289f2e6d434a53&d=KpGTTNZcdOBf135dZ7JFrRG4tPU1NRhQdW1fA7qWD31v64zEEr7QXCGpeWBft7QWC7MaedGacSfmlrgpEW4mX4ZEEr7AEcQatpUqecZEtEfHx3WFpefHrcwBpjFh1pHQPrfhpPGfTPUTeCO1PPufXDWasbg8LUhwPc11edGAtLMQLpoAkj
+]]>
+                            </Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickTracking id="ThirdParty">
+                                <![CDATA[
+/track.php?v=ee3edeff5a81998072289f2e6d434a53&d=KpGTTNzcdoBf135Dz7JFrrG4tPu1nRhQdW1fA7Qwd31v64ZEeR7QXcgPEwBfT7QWC7mAeDgaPCFt1N5zeRFAE7zVcS1aEDGatggQTdo1Tv1QAzWVPJ5TAzWjtjnTXzw3twgFEZwfTr5qtdQaTB3TtDZS8Eg84
+]]>
+                            </ClickTracking>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </Wrapper>
+    </Ad>
+</VAST>

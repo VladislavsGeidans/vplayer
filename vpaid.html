@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<!-- <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input> -->
+<!-- /////////////// -->
+
+<script type="text/javascript">
+    $(function () {
+        var vpaidFrame = document.createElement('iframe');
+        vpaidFrame.style.display = 'none';
+        vpaidFrame.width = 800;
+        vpaidFrame.height = 600;
+        vpaidFrame.onload = function () {
+            var vpaidLoader = vpaidFrame.contentWindow.document.createElement('script');
+            vpaidLoader.src = 'vpaidpl.js';
+            vpaidLoader.onload = function () {
+                var LiveRailVPAID = vpaidFrame.contentWindow.getVPAIDAd();
+                LiveRailVPAID.handshakeVersion('2.0');
+//                alert('test')
+
+                LiveRailVPAID.subscribe(function() {
+                    // startAdButton.removeAttribute('disabled');
+                    // videojs("videoElement", {}, function(){
+                    //     // Player (this) is initialized and ready.
+                    // });
+                    LiveRailVPAID.startAd();
+                }, 'AdLoaded');
+                LiveRailVPAID.subscribe(function() {
+                    // playerReset();
+                    videojs("videoElement").play();
+                }, 'AdStopped');
+                LiveRailVPAID.subscribe(function() {
+                    // playerReset();
+                }, 'AdError');
+                LiveRailVPAID.subscribe(function(message) {
+                    console.log(message);
+                    console.log('message');
+                }, 'AdLog');
+                LiveRailVPAID.subscribe(function(message) {
+
+                    console.log('------------ complete');
+                }, 'AdComplete');
+
+                var mode = "normal" // “normal”, “thumbnail”, or “fullscreen”
+                var bitreit = 512;
+                var creativeData = {AdParameters: '{"overlays":["http://ryanthompson591.github.io/vpaidExamples/img/ClickThroughAnimatedByCss.jpg","http://ryanthompson591.github.io/vpaidExamples/img/ChangeToALinearAd.jpg"], "videos":[{"url":"http://video.webmfiles.org/big-buck-bunny_trailer.webm","mimetype":"video/webm"}, {"url":"http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4","mimetype":"video/mp4"}]}'}; //from AdParameters
+                var environmentVars = {};
+
+                environmentVars.slot = document.getElementById('test');
+                environmentVars.videoSlot = document.getElementById('video'); /// Not used in this ad
+                LiveRailVPAID.initAd(800, 600, mode, bitreit, creativeData, environmentVars);
+            }
+            vpaidFrame.contentWindow.document.body.appendChild(vpaidLoader);
+        }
+        document.body.appendChild(vpaidFrame);
+    })
+</script>
+</body>
+</html>

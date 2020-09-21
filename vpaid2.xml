@@ -1,0 +1,29 @@
+<VAST xmlns:MM="http://www.example.com" version="2.0">
+	<Ad id="10724976">
+		<InLine>
+			<AdSystem><![CDATA[ Test ]]></AdSystem>
+			<AdTitle><![CDATA[ html5_new_ad ]]></AdTitle>
+			<Description><![CDATA[ html5_new_ad ]]></Description>
+			
+			
+			<Creatives>
+				<Creative id="23227072" AdID="23227072" sequence="1">
+					<Linear>
+						<AdParameters>
+						<![CDATA[
+						{"videos" : [{mimetype: 'video/mp4', url : 'https://vjs.zencdn.net/v/oceans.mp4'}]}
+						]]>
+						</AdParameters>
+						<MediaFiles>
+							<MediaFile id="3022295" height="480" width="640" bitrate="" type="application/javascript" delivery="progressive" maintainAspectRatio="true" scalable="true" apiFramework="VPAID">
+							<![CDATA[
+							https://s3-us-west-2.amazonaws.com/dvtests/VpaidVideoAd_v2.js
+							]]>
+							</MediaFile>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+			</Creatives>
+		</InLine>
+	</Ad>
+</VAST>
