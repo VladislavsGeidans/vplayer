@@ -20,7 +20,6 @@
     }
 </style>
 
-<h2 style="text-align: center">Real Player</h2>
 <div id="myplayer"></div>
 
 <div id="adpodsplayer"></div>
@@ -30,7 +29,7 @@
         volume: 0.1,
         width: '100%',
         height: '100%',
-        autoplay: true,
+        autoplay: false,
         playlist: ['test/sample2.mp4'],
         playlist : [
             {
@@ -71,11 +70,12 @@
             //     type: 'preroll',
             // },
             {
-                url: 'http://ads.adfox.ru/252591/getCode?pp=q&ps=cmru&p2=fllu&dl=http://trailerstube.ru/&pr1=7847476245878087085',
-                type: 'preroll',
+                url: 'https://storage.googleapis.com/gvabox/external_sample/vpaid2jsnonlinear.xml',
+                type: 'midroll',
+                offset: 1
             },
-            // {
-            //     url: 'http://code.moviead55.ru/vmap2.php?v=0a3d49f62abfcd595ba3b8ecfc2adf53&cp.referer=http://trailerstube.ru/trailers/2915-vse-pary-delayut-eto.html&cp.video_id=2915&cp.title=%D0%92%D1%81%D0%B5%20%D0%BF%D0%B0%D1%80%D1%8B%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%8E%D1%82%20%D1%8D%D1%82%D0%BE&cp.page=http%3A%2F%2Ftrailerstube.ru%2Ftrailers%2F2915-vse-pary-delayut-eto.html&cp.cb=48d92896-4bbc-0620-01ac-99f2ede30893&position=pre&cp.imp=0&title=[title]',
+            //{
+            //     url: 'https://code.moviead55.ru/vmap2.php?v=0a3d49f62abfcd595ba3b8ecfc2adf53&cp.referer=http://trailerstube.ru/trailers/2915-vse-pary-delayut-eto.html&cp.video_id=2915&cp.title=%D0%92%D1%81%D0%B5%20%D0%BF%D0%B0%D1%80%D1%8B%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%8E%D1%82%20%D1%8D%D1%82%D0%BE&cp.page=http%3A%2F%2Ftrailerstube.ru%2Ftrailers%2F2915-vse-pary-delayut-eto.html&cp.cb=48d92896-4bbc-0620-01ac-99f2ede30893&position=pre&cp.imp=0&title=[title]',
             //     type: 'preroll',
             //     maxAds: 1,
             // },
@@ -98,10 +98,10 @@
             //     type: 'midroll',
             //     offset: 3
             // },
-            // {
-            //     url: '/vpaidtest.xml',
-            //     type: 'preroll'
-            // },
+            {
+                url: 'test_vast.xml',
+                type: 'preroll'
+            },
             // {
             //     url: '//skyplayer.dev/noninline3.xml',
             //     type: 'nonlinear',

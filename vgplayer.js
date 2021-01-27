@@ -2004,7 +2004,6 @@ var VGPlayer = (function () {
         return check ? flatten(_.values(object)[0]) : object;
     }
 
-
     var UTILS = {
         isMobile: function () {
             var isMobile = false; //initiate as false
@@ -2278,28 +2277,29 @@ var VGPlayer = (function () {
         }
         creative.event_links = {};
         creative.event_links_progress = [];
-        if (creative.Linear.TrackingEvents && creative.Linear.TrackingEvents.Tracking) {
+        //console.log(creative);
+        // if (creative.Linear.TrackingEvents && creative.Linear.TrackingEvents.Tracking) {
 
-            var ic = new InlineCreative();
-            creative.Linear.TrackingEvents.Tracking.forEach(function (item, i, ar) {
-                var event_name = item['@attributes'].event;
-                for (var propertyName in ic.event_links) {
-                    if (propertyName == event_name) {
-                        if (propertyName == "progress") {
-                            var event_progress_object = {
-                                url: null,
-                                offset: null
-                            };
-                            event_progress_object.url = item.VALUE ? item.VALUE : item['#text'];
-                            event_progress_object.offset = item['@attributes'].offset;
-                            creative.event_links_progress.push(event_progress_object);   
-                        }   
-                        creative.event_links[propertyName] = item.VALUE ? item.VALUE : item['#text'];
-                    }
-                }
-            });
+        //     var ic = new InlineCreative();
+        //     creative.Linear.TrackingEvents.Tracking.forEach(function (item, i, ar) {
+        //         var event_name = item['@attributes'].event;
+        //         for (var propertyName in ic.event_links) {
+        //             if (propertyName == event_name) {
+        //                 if (propertyName == "progress") {
+        //                     var event_progress_object = {
+        //                         url: null,
+        //                         offset: null
+        //                     };
+        //                     event_progress_object.url = item.VALUE ? item.VALUE : item['#text'];
+        //                     event_progress_object.offset = item['@attributes'].offset;
+        //                     creative.event_links_progress.push(event_progress_object);   
+        //                 }   
+        //                 creative.event_links[propertyName] = item.VALUE ? item.VALUE : item['#text'];
+        //             }
+        //         }
+        //     });
             
-        }
+        // }
         return creative;
     };
 
@@ -2321,7 +2321,8 @@ var VGPlayer = (function () {
             });
         } else {
             var creative = this.getCurrentCreative();
-            skipOffSet = creative.Linear['@attributes'].skipoffset;
+            //skipOffSet = creative.Linear['@attributes'].skipoffset;
+            skipOffSet = 5;
         }
         return skipOffSet;
 
@@ -2342,24 +2343,56 @@ var VGPlayer = (function () {
         }
         var current_creative = this.getCurrentCreative();
         var Parameters = null;
+
         if (current_creative) {
-            if (Array.isArray(current_creative.Linear.AdParameters)) {
-                Parameters = current_creative.Linear.AdParameters[0];
-            } else {
-                Parameters = current_creative.Linear.AdParameters;
+            if (current_creative.NonLinearAds) {
+                if (current_creative.NonLinearAds.NonLinear['@attributes'].apiFramework == "VPAID") {
+                    Parameters = current_creative.NonLinearAds.NonLinear['AdParameters'];
+                }
+                
+                if (Parameters && Parameters.VALUE) {
+                    return Parameters.VALUE;
+                }
+                return null;
             }
-            if (Parameters && Parameters.VALUE) {
-                return Parameters.VALUE;
-            } else if (Parameters && Parameters['#text']) {
-                return Parameters['#text'];
-            }
-            return null;
         }
+
+        // if (current_creative) {
+        //     if (Array.isArray(current_creative.Linear.AdParameters)) {
+        //         Parameters = current_creative.Linear.AdParameters[0];
+        //     } else {
+        //         Parameters = current_creative.Linear.AdParameters;
+        //     }
+        //     if (Parameters && Parameters.VALUE) {
+        //         return Parameters.VALUE;
+        //     } else if (Parameters && Parameters['#text']) {
+        //         return Parameters['#text'];
+        //     }
+        //     return null;
+        // }
     };
     /** возвращает текущий media */
     VAST.prototype.getCurrentMedia = function () {
         var creative = this.getCurrentCreative();
         var mediaFile = null;
+        var AdJson = null;
+        var AdVideoUrl = null;
+
+        // if (creative) {
+        //     if (creative.NonLinearAds) {
+        //         if (creative.NonLinearAds.NonLinear['@attributes'].apiFramework == "VPAID") {
+        //             mediaFile = creative.NonLinearAds.NonLinear['AdParameters'].VALUE;
+        //         }
+
+        //         AdJson = JSON.parse(mediaFile);                
+        //         if (AdJson) {
+        //             AdVideoUrl = AdJson.videos[0].url;
+        //             return AdVideoUrl;
+        //         }
+        //         return null;
+        //     }
+        // }
+
         if (creative) {
             if (Array.isArray(creative.Linear.MediaFiles.MediaFile)) {
                 creative.Linear.MediaFiles.MediaFile.forEach(function (item, i, arr) {
@@ -2378,10 +2411,17 @@ var VGPlayer = (function () {
             return null;
         }
     };
-    /** возвращает тип текущего media */
+    /**
+     * возвращает тип текущего media  
+     * 
+     * Например
+     * 
+     * VPAID
+    */
     VAST.prototype.getCurrentMediaType = function () {
         var creative = this.getCurrentCreative();
         var mediaFile = null;
+
         if (creative) {
             if (Array.isArray(creative.Linear.MediaFiles.MediaFile)) {
                 mediaFile = creative.Linear.MediaFiles.MediaFile[0];

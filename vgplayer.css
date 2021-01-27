@@ -298,15 +298,12 @@ video {
     left: 0;
     transition: .5s;
     z-index: 2147483647;
-    background: #690000;
+    background: #9c9c9c1a;
 }
 
 .controls_content_player {
     height: 100%;
 }
-
-
-
 
 .controls_div {
     width: 100%;
@@ -611,7 +608,7 @@ video {
     z-index: 99999;
     position: relative;
     position: absolute;
-    background: #e4817b;
+    background: #08B2BD;
     height: 8px;
 }
 
