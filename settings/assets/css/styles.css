@@ -1,67 +1,117 @@
-.row {
-	padding-left: 12px;
-	padding-right: 12px;
+body {
+	background: #f7f7f7;
 }
 
-.background-grey {
-	background-color: #f7f7f7;
-}
-
-.navbar-brand {
-	align-items: center;
-}
-
-.navbar-brand i {
-	font-size: 28px;
-	padding: 0 12px 0 6px;
-}
-
-.alerts-block {
-	padding: 0px !important;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	margin-top: 12px;
+.header_block {
+	background: #8faabd;
 	margin-bottom: 12px;
 }
 
-.sidebar-block {
-	padding: 0px !important;
+.header_sidebar {
+	background: #648aa4;
+	color: #FFF;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
-.sidebar-box {
-	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	margin-bottom: 24px;
+.header_sidebar a {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: 0;
 }
 
-.sidebar-box-title {
-	margin: 6px 12px;
-	font-size: 18px;
-	font-weight: 600;
-	border-bottom: 1px solid #ddd;
+.header_main_block {
+	color: #FFF;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
-.sidebar-box-title p {
-	margin-bottom: 2px;
+.header_main_block a {
+	color: #FFF;
+	text-decoration: none;
 }
 
-.main-block {
-	padding-bottom: 48px;
+.center_block {
+	background: #FFF;
 }
 
-.footer_main_block {
-	padding: 60px 12px 20px 12px;
+.sidebar_block {
+	background: #648aa4;
+	color: #FFF;
+	padding: 0;
+}
+
+.sidebar_block ul li {
+	background: #648aa4;
+}
+
+.list-group-item {
+	color: #eee;
+	border: none;
+}
+
+.list-group-item:hover {
+	background: rgba(0,0,0,0.1);
+	color: #FFF;
+}
+
+.list-group a {
+	text-decoration: none;
+}
+
+.list-group a.active .list-group-item {
+	background: rgba(0,0,0,0.2);
+	color: #FFF;
+}
+
+.footer_block {
+	background: #364c5b;
+}
+
+.footer_block .row {
+	color: #FFF;
+	padding-top: 36px;
+	padding-bottom: 6px;
 }
 
 .access_denied_icon {
-	padding-top: 48px;
-	padding-bottom: 48px;
-	font-size: 96px;
+	font-size: 42px;
+	padding-bottom: 12px;
+	padding-top: 12px;
 }
 
-.access_denied_textarea {
-	padding-top: 24px;
+.access_denied_block {
+
+}
+
+.page_title_block {
+	font-size: 28px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #eee;
+}
+
+.main-block {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+form .row {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+form .row .col-12 {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+form .row .col-6 {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+form label {
+	font-weight: bold;
+	font-size: 14px;
+	padding-bottom: 4px;
 }

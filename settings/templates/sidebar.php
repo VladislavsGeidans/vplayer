@@ -1,12 +1,15 @@
-<div class="col-3 sidebar-block">
-	<div class="sidebar-box">
-		<div class="sidebar-box-title">
-			<p class="text-start">Меню</p>
-		</div>
-		<ul class="list-group list-group-flush">
-			<li class="list-group-item">
-				<a href="#">Настройки рекламы</a>
-			</li>
-		</ul>
-	</div>
+<div class="col-2 sidebar_block">
+	<ul class="list-group list-group-flush">
+		<?php
+			foreach($globalPages as $page) {
+				?>
+					<a href="?page=<?= $page->getPageCode(); ?>" class="<?= isActivePage($page->getPageCode()); ?>">
+						<li class="list-group-item">
+							<?= $page->getPageName(); ?>
+						</li>
+					</a>
+				<?php
+			}
+		?>
+	</ul>
 </div>

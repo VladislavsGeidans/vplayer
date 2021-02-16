@@ -2,7 +2,7 @@
 	const HOST_NAME = "localhost";
 	const USER_NAME = "root";
 	const USER_PASS = "";
-	const DATABASE_NAME = "";
+	const DATABASE_NAME = "vplayer_db";
 
     /**
      * @param string $hostName

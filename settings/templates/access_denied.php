@@ -17,24 +17,18 @@
         <script type="text/javascript" src="assets/js/scripts.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container access_denied_block">
             <div class="row justify-content-md-center">
                 <div class="col-12 access_denied_icon text-center text-muted">
                 	<i class="fas fa-exclamation-triangle"></i>
                 </div>
 
                 <div class="col-12">
-                	<h3><p class="text-muted text-center">Нет доступа</p></h3>
+                	<h3><p class="text-muted text-center">Access denied</p></h3>
                 </div>
 
                 <div class="col-12">
-                	<p class="text-muted text-center">На данный момент, Вы не можете попасть на сайт</p>
-                </div>
-
-                <div class="col-6 align-center access_denied_textarea">
-                	<textarea cols="2" rows="10" class="form-control" readonly disabled>
-                		<?= $connection; ?>
-                	</textarea>
+                	<p class="text-muted text-center"></p>
                 </div>
             </div>
         </div>

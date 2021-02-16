@@ -1,5 +1,7 @@
 <?php
     include_once('config/databaseConfig.php');
+    include_once('config/constants.php');
+    include_once('func/functions.php');
 ?>
 
 <html>
@@ -25,7 +27,7 @@
 
         <?php include_once('templates/alerts-block.php'); ?>
 
-        <div class="container">
+        <div class="container center_block">
             <div class="row">
                 <?php include_once('templates/sidebar.php'); ?>
                 <?php include_once('templates/main.php'); ?>
