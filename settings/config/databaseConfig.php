@@ -1,8 +1,8 @@
 <?php
-	const HOST_NAME = "localhost";
-	const USER_NAME = "root";
-	const USER_PASS = "";
-	const DATABASE_NAME = "vplayer_db";
+	const HOST_NAME = "mysql.odvinsk.ru:81";
+	const USER_NAME = "vlad";
+	const USER_PASS = "vlad2021";
+	const DATABASE_NAME = "vlad";
 
     /**
      * @param string $hostName
