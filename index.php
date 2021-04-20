@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VGPlayer Demo</title>
+
+
+    <link rel="stylesheet" type="text/css" href="vgplayer.css?v=2">
+    <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
+</head>
+<body>
+    <div id="myplayer"></div>
+    <div id="adpodsplayer"></div>
+
+    <script src="vgplayer.js?v=2"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
