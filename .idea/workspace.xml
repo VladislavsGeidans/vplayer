@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3767c6c-0d0b-4a89-afff-8949479379e8" name="Default Changelist" comment="" />
+    <list default="true" id="0ec4b6d6-2747-4676-9029-ea092443fa1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sftp-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlad_err.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vlad_ok.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vpaid2jsnonlinear.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/blockUI/jquery.blockUI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/assets/vendor/jquery/jquery-3.5.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/class/Page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/config/constants.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/config/databaseConfig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/controllers/ajax_ads_controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/func/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/pages/ads.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/templates/access_denied.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/templates/alerts-block.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/templates/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/templates/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/templates/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/templates/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vgplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/vgplayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrapper_creative2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wrapper_creative2.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,29 +52,63 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1nfjPviazvaMirylKOmja8U0rnO" />
+  <component name="ProjectId" id="1rPDJoZ9oZ117oene3fJN1JmDm9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/js" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a3767c6c-0d0b-4a89-afff-8949479379e8" name="Default Changelist" comment="" />
-      <created>1611788019616</created>
+      <changelist id="0ec4b6d6-2747-4676-9029-ea092443fa1e" name="Default Changelist" comment="" />
+      <created>1618868762690</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1611788019616</updated>
-      <workItem from="1611788020703" duration="66000" />
+      <updated>1618868762690</updated>
+      <workItem from="1618868766724" duration="100000" />
+      <workItem from="1618934833026" duration="659000" />
+      <workItem from="1618936582210" duration="10165000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

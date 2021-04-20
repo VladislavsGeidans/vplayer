@@ -1,11 +1,11 @@
-var VGPlayer;
-var VGPlayer = (function () {
+var VPlayer;
+var VPlayer = (function () {
     "use strict";
     var _g = {};
-    var PLUGIN_NAME = 'vgplayer',
+    var PLUGIN_NAME = 'vplayer',
         PLUGIN_VERSION = '0.1',
         PLUGIN_OPTIONS = {};
-    var VGPlayer = function (id, options) {
+    var VPlayer = function (id, options) {
         this.id = id;
         this.name = PLUGIN_NAME;
         this.version = PLUGIN_VERSION;
@@ -36,14 +36,14 @@ var VGPlayer = (function () {
         this.setVolume(this.volume);
     };
 
-    VGPlayer.init = function (id, options) {
+    VPlayer.init = function (id, options) {
 
         var rollbarLoader = document.createElement('script');
         rollbarLoader.src = "https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.2.10/rollbar.min.js";
         document.getElementById(id).appendChild(rollbarLoader);
 
-        _g.sp = new VGPlayer(id, options);
-        
+        _g.sp = new VPlayer(id, options);
+
         if (document.getElementById(id)) {
             document.getElementById(id).style.backgroundColor = 'black';
         }
@@ -57,7 +57,7 @@ var VGPlayer = (function () {
         return _g.sp;
     };
 
-    VGPlayer.prototype = {
+    VPlayer.prototype = {
         _callbackAdsStarted: function () {
         },
         _callbackAdsEnded: function () {
@@ -647,7 +647,6 @@ var VGPlayer = (function () {
          if (typeof(full) != 'undefined' && full != null)
          {
          if (!window.screenTop && !window.screenY) {
-
          }
          else {
          if (full.requestFullscreen) {
@@ -2004,6 +2003,7 @@ var VGPlayer = (function () {
         return check ? flatten(_.values(object)[0]) : object;
     }
 
+
     var UTILS = {
         isMobile: function () {
             var isMobile = false; //initiate as false
@@ -2277,29 +2277,28 @@ var VGPlayer = (function () {
         }
         creative.event_links = {};
         creative.event_links_progress = [];
-        //console.log(creative);
-        // if (creative.Linear.TrackingEvents && creative.Linear.TrackingEvents.Tracking) {
+        if (creative.Linear.TrackingEvents && creative.Linear.TrackingEvents.Tracking) {
 
-        //     var ic = new InlineCreative();
-        //     creative.Linear.TrackingEvents.Tracking.forEach(function (item, i, ar) {
-        //         var event_name = item['@attributes'].event;
-        //         for (var propertyName in ic.event_links) {
-        //             if (propertyName == event_name) {
-        //                 if (propertyName == "progress") {
-        //                     var event_progress_object = {
-        //                         url: null,
-        //                         offset: null
-        //                     };
-        //                     event_progress_object.url = item.VALUE ? item.VALUE : item['#text'];
-        //                     event_progress_object.offset = item['@attributes'].offset;
-        //                     creative.event_links_progress.push(event_progress_object);   
-        //                 }   
-        //                 creative.event_links[propertyName] = item.VALUE ? item.VALUE : item['#text'];
-        //             }
-        //         }
-        //     });
-            
-        // }
+            var ic = new InlineCreative();
+            creative.Linear.TrackingEvents.Tracking.forEach(function (item, i, ar) {
+                var event_name = item['@attributes'].event;
+                for (var propertyName in ic.event_links) {
+                    if (propertyName == event_name) {
+                        if (propertyName == "progress") {
+                            var event_progress_object = {
+                                url: null,
+                                offset: null
+                            };
+                            event_progress_object.url = item.VALUE ? item.VALUE : item['#text'];
+                            event_progress_object.offset = item['@attributes'].offset;
+                            creative.event_links_progress.push(event_progress_object);
+                        }
+                        creative.event_links[propertyName] = item.VALUE ? item.VALUE : item['#text'];
+                    }
+                }
+            });
+
+        }
         return creative;
     };
 
@@ -2321,12 +2320,12 @@ var VGPlayer = (function () {
             });
         } else {
             var creative = this.getCurrentCreative();
-            //skipOffSet = creative.Linear['@attributes'].skipoffset;
-            skipOffSet = 5;
+            skipOffSet = creative.Linear['@attributes'].skipoffset;
         }
         return skipOffSet;
 
     };
+
 
     VAST.prototype.getCurrentDuration = function () {
         var creative = this.getCurrentCreative();
@@ -2343,56 +2342,24 @@ var VGPlayer = (function () {
         }
         var current_creative = this.getCurrentCreative();
         var Parameters = null;
-
         if (current_creative) {
-            if (current_creative.NonLinearAds) {
-                if (current_creative.NonLinearAds.NonLinear['@attributes'].apiFramework == "VPAID") {
-                    Parameters = current_creative.NonLinearAds.NonLinear['AdParameters'];
-                }
-                
-                if (Parameters && Parameters.VALUE) {
-                    return Parameters.VALUE;
-                }
-                return null;
+            if (Array.isArray(current_creative.Linear.AdParameters)) {
+                Parameters = current_creative.Linear.AdParameters[0];
+            } else {
+                Parameters = current_creative.Linear.AdParameters;
             }
+            if (Parameters && Parameters.VALUE) {
+                return Parameters.VALUE;
+            } else if (Parameters && Parameters['#text']) {
+                return Parameters['#text'];
+            }
+            return null;
         }
-
-        // if (current_creative) {
-        //     if (Array.isArray(current_creative.Linear.AdParameters)) {
-        //         Parameters = current_creative.Linear.AdParameters[0];
-        //     } else {
-        //         Parameters = current_creative.Linear.AdParameters;
-        //     }
-        //     if (Parameters && Parameters.VALUE) {
-        //         return Parameters.VALUE;
-        //     } else if (Parameters && Parameters['#text']) {
-        //         return Parameters['#text'];
-        //     }
-        //     return null;
-        // }
     };
     /** возвращает текущий media */
     VAST.prototype.getCurrentMedia = function () {
         var creative = this.getCurrentCreative();
         var mediaFile = null;
-        var AdJson = null;
-        var AdVideoUrl = null;
-
-        // if (creative) {
-        //     if (creative.NonLinearAds) {
-        //         if (creative.NonLinearAds.NonLinear['@attributes'].apiFramework == "VPAID") {
-        //             mediaFile = creative.NonLinearAds.NonLinear['AdParameters'].VALUE;
-        //         }
-
-        //         AdJson = JSON.parse(mediaFile);                
-        //         if (AdJson) {
-        //             AdVideoUrl = AdJson.videos[0].url;
-        //             return AdVideoUrl;
-        //         }
-        //         return null;
-        //     }
-        // }
-
         if (creative) {
             if (Array.isArray(creative.Linear.MediaFiles.MediaFile)) {
                 creative.Linear.MediaFiles.MediaFile.forEach(function (item, i, arr) {
@@ -2411,17 +2378,10 @@ var VGPlayer = (function () {
             return null;
         }
     };
-    /**
-     * возвращает тип текущего media  
-     * 
-     * Например
-     * 
-     * VPAID
-    */
+    /** возвращает тип текущего media */
     VAST.prototype.getCurrentMediaType = function () {
         var creative = this.getCurrentCreative();
         var mediaFile = null;
-
         if (creative) {
             if (Array.isArray(creative.Linear.MediaFiles.MediaFile)) {
                 mediaFile = creative.Linear.MediaFiles.MediaFile[0];
@@ -2933,5 +2893,5 @@ var VGPlayer = (function () {
     Rollbar.configure({reportLevel: 'error', enabled: false});
     //Rollbar.configure({reportLevel: 'error', enabled: true});
 
-    return VGPlayer;
+    return VPlayer;
 }());
