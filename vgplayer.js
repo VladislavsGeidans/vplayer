@@ -105,16 +105,6 @@ var VPlayer = (function () {
                     VideoError: options.callbacks && options.callbacks.VideoError ? options.callbacks.VideoError : default_option.callbacks.VideoError,
                 }
             };
-            //this.options = Object.assign({}, this.options, options);
-            // var isIE = false || !!document.documentMode;
-            // if (isIE == true) {
-            //     this.options = JSON.parse(JSON.stringify(options));
-            // } else {
-            //     this.options = Object.assign({}, this.options, options);
-            // }
-            //this.options = self.mergeobj({}, this.options, options);
-
-            //this.options = _.clone(options, true);
         },
         getMainBlock: function () {
             return document.getElementById(this.id);
@@ -166,20 +156,20 @@ var VPlayer = (function () {
             // this.togglePlayback();
         },
         stop: function () {
-            var self = this;
+            let self = this;
             this.controls.playpause.classList.add("play_icon");
             this.controls.playpause.classList.remove("pause_icon");
             document.getElementById('play_center_div').style.display = 'block';
         },
         nextVideo: function () {
-            var play_center_div = document.getElementById('play_center_div');
+            let play_center_div = document.getElementById('play_center_div');
             UTILS.removeElement(this.video);
             //video
             this.load_ads = false;
             this.current_video_index++;
             this.makeControls();
             this.bind();
-            var fs = this.fullscreen_div;
+            let fs = this.fullscreen_div;
 
             if (!this.load_ads) {
                 this.load_ads = true;

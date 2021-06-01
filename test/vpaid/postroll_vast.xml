@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VAST version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://specs.adfox.ru/uploads/vast.xsd">
+    <Ad id="1560945">
+        <InLine>
+            <AdSystem>AdFox.Ru</AdSystem>
+            <AdTitle>Linear Video Ad</AdTitle>
+            <Description>video ad</Description>
+            <Error>
+                <![CDATA[http://ads.adfox.ru/168627/event?hash=da1c05dd326878ad&pm=u&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=qycstf&p1=bdcfe&p2=ekza]]></Error>
+            <Impression><![CDATA[http://skyplayer.dev/168627/event-imp]]></Impression>
+            <Creatives>
+                <Creative>
+                    <Linear>
+
+                        <Duration>00:00:16</Duration>
+
+                        <TrackingEvents>
+                            <Tracking event="creativeView"><![CDATA[http://skyplayer.dev/168627/event-creativeView]]></Tracking>
+                            <Tracking event="start"><![CDATA[http://skyplayer.dev/168627/event-start]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[http://skyplayer.dev/168627/event-midpoint]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[http://skyplayer.dev/168627/event-firstQuartile]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[http://skyplayer.dev/168627/event-thirdQuartile]]></Tracking>
+                            <Tracking event="complete"><![CDATA[http://skyplayer.dev/168627/event-complete]]></Tracking>
+                            <Tracking event="mute"><![CDATA[http://skyplayer.dev/168627/event-mute]]></Tracking>
+                            <Tracking event="unmute"><![CDATA[http://skyplayer.dev/168627/event-unmute]]></Tracking>
+                            <Tracking event="pause"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="rewind"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="resume"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="fullscreen"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="expand"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="collapse"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="acceptInvitation"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="close"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                        </TrackingEvents>
+
+                        <AdParameters></AdParameters>
+
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[http://ads.adfox.ru/168627/goLink?hash=86e9a2a203310723&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=dptmeqv&p1=bdcfe&p2=ekza]]>
+                            </ClickThrough>
+                            <ClickTracking>
+                                <![CDATA[http://skyplayer.dev/168627/event_video_click]]>
+                            </ClickTracking>
+                        </VideoClicks>
+
+                        <MediaFiles>
+                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="" maintainAspectRatio="false" scalable="true" width="1280" height="720">
+                                <![CDATA[http://banners.adfox.ru/160205/adfox/455939/1560945_1.mp4]]></MediaFile>
+                        </MediaFiles>
+
+                    </Linear>
+                </Creative>
+            </Creatives>
+
+            <Extensions>
+                <Extension type="startTime"><![CDATA[00:00]]></Extension>
+                <Extension type="skipTime"><![CDATA[0:00:05]]></Extension>
+                <Extension type="skipTime2"><![CDATA[00:00]]></Extension>
+                <Extension type="linkTxt">
+                    <![CDATA[&#1087;&#1077;&#1088;&#1077;&#1081;&#1090;&#1080; &#1085;&#1072; &#1089;&#1072;&#1081;&#1090; &#1088;&#1077;&#1082;&#1083;&#1072;&#1084;&#1086;&#1076;&#1072;&#1090;&#1077;&#1083;&#1103;]]></Extension>
+                <Extension type="isClickable"><![CDATA[1]]></Extension>
+                <Extension type="skipAd">
+                    <![CDATA[http://ads.adfox.ru/168627/event?hash=15c87f77e96a23e9&pm=s&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=fepaafa&p1=bdcfe&p2=ekza]]></Extension>
+                <Extension type="addClick">
+                    <![CDATA[http://ads.adfox.ru/168627/event?hash=8b933244a67baf65&pm=t&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=bkqfywk&p1=bdcfe&p2=ekza]]></Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+    <Ad id="1560945" sequence="2">
+        <InLine>
+            <AdSystem>AdFox.Ru</AdSystem>
+            <AdTitle>Linear Video Ad</AdTitle>
+            <Description>video ad</Description>
+            <Error>
+                <![CDATA[http://ads.adfox.ru/168627/event?hash=da1c05dd326878ad&pm=u&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=qycstf&p1=bdcfe&p2=ekza]]></Error>
+            <Impression><![CDATA[http://skyplayer.dev/168627/event-imp]]></Impression>
+            <Creatives>
+                <Creative>
+                    <Linear>
+
+                        <Duration>00:00:16</Duration>
+
+                        <TrackingEvents>
+                            <Tracking event="creativeView"><![CDATA[http://skyplayer.dev/168627/event-creativeView]]></Tracking>
+                            <Tracking event="start"><![CDATA[http://skyplayer.dev/168627/event-start]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[http://skyplayer.dev/168627/event-midpoint]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[http://skyplayer.dev/168627/event-firstQuartile]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[http://skyplayer.dev/168627/event-thirdQuartile]]></Tracking>
+                            <Tracking event="complete"><![CDATA[http://skyplayer.dev/168627/event-complete]]></Tracking>
+                            <Tracking event="mute"><![CDATA[http://skyplayer.dev/168627/event-mute]]></Tracking>
+                            <Tracking event="unmute"><![CDATA[http://skyplayer.dev/168627/event-unmute]]></Tracking>
+                            <Tracking event="pause"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="rewind"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="resume"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="fullscreen"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="expand"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="collapse"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="acceptInvitation"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="close"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                        </TrackingEvents>
+
+                        <AdParameters></AdParameters>
+
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[http://ads.adfox.ru/168627/goLink?hash=86e9a2a203310723&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=dptmeqv&p1=bdcfe&p2=ekza]]></ClickThrough>
+                        </VideoClicks>
+
+                        <MediaFiles>
+                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="" maintainAspectRatio="false" scalable="true" width="1280" height="720">
+                                <![CDATA[http://banners.adfox.ru/160205/adfox/455939/1560945_1.mp4]]></MediaFile>
+                        </MediaFiles>
+
+                    </Linear>
+                </Creative>
+            </Creatives>
+
+            <Extensions>
+                <Extension type="startTime"><![CDATA[00:00]]></Extension>
+                <Extension type="skipTime"><![CDATA[0:00:04]]></Extension>
+                <Extension type="skipTime2"><![CDATA[00:00]]></Extension>
+                <Extension type="linkTxt">
+                    <![CDATA[&#1087;&#1077;&#1088;&#1077;&#1081;&#1090;&#1080; &#1085;&#1072; &#1089;&#1072;&#1081;&#1090; &#1088;&#1077;&#1082;&#1083;&#1072;&#1084;&#1086;&#1076;&#1072;&#1090;&#1077;&#1083;&#1103;]]></Extension>
+                <Extension type="isClickable"><![CDATA[1]]></Extension>
+                <Extension type="skipAd">
+                    <![CDATA[http://ads.adfox.ru/168627/event?hash=15c87f77e96a23e9&pm=s&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=fepaafa&p1=bdcfe&p2=ekza]]></Extension>
+                <Extension type="addClick">
+                    <![CDATA[http://ads.adfox.ru/168627/event?hash=8b933244a67baf65&pm=t&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=bkqfywk&p1=bdcfe&p2=ekza]]></Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+    <Ad id="1560945" sequence="3">
+        <InLine>
+            <AdSystem>AdFox.Ru</AdSystem>
+            <AdTitle>Linear Video Ad</AdTitle>
+            <Description>video ad</Description>
+            <Error>
+                <![CDATA[http://ads.adfox.ru/168627/event?hash=da1c05dd326878ad&pm=u&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=qycstf&p1=bdcfe&p2=ekza]]></Error>
+            <Impression><![CDATA[http://skyplayer.dev/168627/event-imp]]></Impression>
+            <Creatives>
+                <Creative>
+                    <Linear>
+
+                        <Duration>00:00:16</Duration>
+
+                        <TrackingEvents>
+                            <Tracking event="creativeView"><![CDATA[http://skyplayer.dev/168627/event-creativeView]]></Tracking>
+                            <Tracking event="start"><![CDATA[http://skyplayer.dev/168627/event-start]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[http://skyplayer.dev/168627/event-midpoint]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[http://skyplayer.dev/168627/event-firstQuartile]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[http://skyplayer.dev/168627/event-thirdQuartile]]></Tracking>
+                            <Tracking event="complete"><![CDATA[http://skyplayer.dev/168627/event-complete]]></Tracking>
+                            <Tracking event="mute"><![CDATA[http://skyplayer.dev/168627/event-mute]]></Tracking>
+                            <Tracking event="unmute"><![CDATA[http://skyplayer.dev/168627/event-unmute]]></Tracking>
+                            <Tracking event="pause"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="rewind"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="resume"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="fullscreen"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="expand"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="collapse"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="acceptInvitation"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+                            <Tracking event="close"><![CDATA[http://skyplayer.dev/168627/event]]></Tracking>
+
+                        </TrackingEvents>
+
+                        <AdParameters></AdParameters>
+
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[http://ads.adfox.ru/168627/goLink?hash=86e9a2a203310723&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=dptmeqv&p1=bdcfe&p2=ekza]]></ClickThrough>
+                        </VideoClicks>
+
+                        <MediaFiles>
+                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="" maintainAspectRatio="false" scalable="true" width="1280" height="720">
+                                <![CDATA[http://banners.adfox.ru/160205/adfox/455939/1560945_1.mp4]]></MediaFile>
+                        </MediaFiles>
+
+                    </Linear>
+                </Creative>
+            </Creatives>
+
+            <Extensions>
+                <Extension type="startTime"><![CDATA[00:00]]></Extension>
+                <Extension type="skipTime"><![CDATA[00:05]]></Extension>
+                <Extension type="skipTime2"><![CDATA[00:00]]></Extension>
+                <Extension type="linkTxt">
+                    <![CDATA[&#1087;&#1077;&#1088;&#1077;&#1081;&#1090;&#1080; &#1085;&#1072; &#1089;&#1072;&#1081;&#1090; &#1088;&#1077;&#1082;&#1083;&#1072;&#1084;&#1086;&#1076;&#1072;&#1090;&#1077;&#1083;&#1103;]]></Extension>
+                <Extension type="isClickable"><![CDATA[1]]></Extension>
+                <Extension type="skipAd">
+                    <![CDATA[http://ads.adfox.ru/168627/event?hash=15c87f77e96a23e9&pm=s&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=fepaafa&p1=bdcfe&p2=ekza]]></Extension>
+                <Extension type="addClick">
+                    <![CDATA[http://ads.adfox.ru/168627/event?hash=8b933244a67baf65&pm=t&lts=ewjlgsv&rqs=PTq_EBUAAABJ_3xZ4RQ-UEWkE8WsipN1&pr=a&p5=dkvcj&rand=bkqfywk&p1=bdcfe&p2=ekza]]></Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>
